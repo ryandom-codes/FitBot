@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "description": "Invented demonstration records; no real person's history or outcomes.",
+  "profile": {
+    "label": "Synthetic demo",
+    "goals": "Practice logging activity",
+    "experience": "Beginner",
+    "equipment": "Dumbbells",
+    "available_days": 3,
+    "height_cm": 170
+  },
+  "checkins": [
+    {"date": "2026-01-01", "weight_kg": 80, "cardio_minutes": 15, "sleep_hours": 7, "notes": "Synthetic record"},
+    {"date": "2026-01-03", "weight_kg": null, "cardio_minutes": 0, "sleep_hours": null, "notes": "Synthetic recorded zero cardio"},
+    {"date": "2026-01-06", "weight_kg": 80.2, "cardio_minutes": null, "sleep_hours": 7.5, "notes": "Synthetic missing cardio measurement"},
+    {"date": "2026-01-08", "weight_kg": 79.9, "cardio_minutes": 20, "sleep_hours": 7, "notes": "Synthetic record"}
+  ],
+  "lifts": [
+    {"date": "2026-01-01", "exercise": "Dumbbell row", "sets": 2, "reps": 8, "load_kg": 10},
+    {"date": "2026-01-01", "exercise": "Goblet squat", "sets": 2, "reps": 8, "load_kg": 12},
+    {"date": "2026-01-06", "exercise": "Dumbbell row", "sets": 2, "reps": 9, "load_kg": 10},
+    {"date": "2026-01-08", "exercise": "Goblet squat", "sets": 2, "reps": 8, "load_kg": 12}
+  ]
+}

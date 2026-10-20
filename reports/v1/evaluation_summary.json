@@ -1,0 +1,40 @@
+{
+  "keyword": {
+    "attempted_outputs": 18,
+    "model_calls": 12,
+    "schema_valid_outputs": 18,
+    "status_matches": 8,
+    "answerable_questions": 8,
+    "hit_at_3": 1.0,
+    "chunk_recall_at_3": 0.7916666666666666,
+    "evidence_unit_coverage_at_3": 1.0,
+    "semantic_completeness": 0.47916666666666663,
+    "citation_identity_validity": 0.9565217391304348,
+    "valid_citation_occurrences": 44,
+    "citation_occurrences": 46,
+    "unsupported_count": 24,
+    "adjudicated_claims": 93,
+    "unsupported_claim_rate": 0.25806451612903225,
+    "unresolved_claims": 1,
+    "mean_model_request_seconds": 44.2415
+  },
+  "vector": {
+    "attempted_outputs": 18,
+    "model_calls": 12,
+    "schema_valid_outputs": 18,
+    "status_matches": 8,
+    "answerable_questions": 8,
+    "hit_at_3": 1.0,
+    "chunk_recall_at_3": 0.8333333333333334,
+    "evidence_unit_coverage_at_3": 1.0,
+    "semantic_completeness": 0.5520833333333333,
+    "citation_identity_validity": 0.9629629629629629,
+    "valid_citation_occurrences": 52,
+    "citation_occurrences": 54,
+    "unsupported_count": 29,
+    "adjudicated_claims": 101,
+    "unsupported_claim_rate": 0.2871287128712871,
+    "unresolved_claims": 1,
+    "mean_model_request_seconds": 44.306999999999995
+  }
+}

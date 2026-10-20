@@ -1,0 +1,36 @@
+{
+  "run_id": "ordinary-qa-v3-20261007",
+  "purpose": "Development acceptance suite for everyday evidence questions. It is not a held-out benchmark and does not replace the frozen V2 evaluation.",
+  "questions": [
+    {
+      "id": "OQ01",
+      "question": "What is the talk test?",
+      "expected_source_ids": ["cdc_intensity"],
+      "required_ideas": ["moderate activity: can talk but not sing", "vigorous activity: only a few words before pausing"]
+    },
+    {
+      "id": "OQ02",
+      "question": "How much aerobic activity do adults generally need?",
+      "expected_source_ids": ["cdc_adult_activity", "cdc_activity_counts"],
+      "required_ideas": ["150 minutes moderate weekly or 75 minutes vigorous or a combination", "can spread activity across the week"]
+    },
+    {
+      "id": "OQ03",
+      "question": "What are some sleep habits the CDC recommends?",
+      "expected_source_ids": ["cdc_sleep"],
+      "required_ideas": ["consistent bedtime and wake time", "quiet, relaxing, cool bedroom", "turn off devices before bed"]
+    },
+    {
+      "id": "OQ04",
+      "question": "What does a serving size mean?",
+      "expected_source_ids": ["fda_nutrition_label", "niddk_portions"],
+      "required_ideas": ["amount listed on label or typical amount people consume", "not a recommendation of how much to eat"]
+    },
+    {
+      "id": "OQ05",
+      "question": "What do the included resistance-training studies say, and what are their limitations?",
+      "expected_source_ids": ["rt_meta_2026"],
+      "required_ideas": ["resistance training increases measured strength outcomes", "findings mainly short-term and predominantly untrained populations", "associations are not proof of mechanism or an individual optimal program"]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+streamlit
+ollama
+pydantic>=2,<3
+numpy
+pandas
+pytest
+beautifulsoup4

@@ -1,0 +1,72 @@
+{
+  "version": "v2-fresh",
+  "frozen_utc": "2026-10-07T20:55:31.752926+00:00",
+  "files": {
+    "agents/coordinator.py": "fbe594adacc1e21aaf1e3d8dc5e4f5085ec6884c872feb402015b2ff50c37725",
+    "agents/research_agent.py": "5d1d1d35827fe6cad5dbbf8420bc7ee4c84f07a4d378db7022144b2c4ce0f6ab",
+    "agents/verification_agent.py": "44b3727258ac943a8b6c4f72011fcc2f53779f87cab91af6139069b8e8fff16c",
+    "data/sources.json": "5dffcf99cdb30423668c41e0d5ef0444c210be72f04f84dcf39da1620fee893e",
+    "docs/health_boundaries.md": "d805859eaf8cbec1eb12dc3ff6be5904114c1b71d4acfe72575d0f3ea78bb5c3",
+    "eval/questions.json": "9629b40d2cadf8ed3c0256a4692ee22d3440ebe53ac89de4da89bdf51d498a8c",
+    "scripts/build_index.py": "bf0f1b8736a2920f6b8f108b410c4235a25627a5f482878e334dc19bfdb2c601",
+    "scripts/fetch_sources.py": "bdc13217066bb75db826924f20bb37ec8f1fe4efa463b0176942309525eae3e5",
+    "scripts/finalize_evaluation.py": "324e0da20b31dd1023e6f06c0a4f6a5cca414f524c6140778656bb6ccac8c123",
+    "scripts/run_evaluation.py": "62dae32cf97dd27896cf1549f892f6747e1d9cd224c4de24e764c001ad30234d",
+    "src/config.py": "7e8f90358ccc84907e7454a730120d92dfae32326b5005042a6817bc5cd43b75",
+    "src/evaluation.py": "4d605674d6fe5dd0473abc020287f66a4a6ea71631bf667c5605aba84fe27602",
+    "src/grounding.py": "dee5ba41d9d9d46bac01ffb231a500522eee023c56593b39b6df07080ac5648e",
+    "src/ingestion.py": "7a6d4173927ee10adceaaac9da19777816f323296990ebf036f5429eee5dccb7",
+    "src/llm.py": "c0cd71c57d6367815a876152605d1ba4aa41fec08aff7238c871c0102fc683b8",
+    "src/models.py": "5895adf43f32e289ab10723ffaba882ea89af181e0d7d5738f4e4ba82e52a9d3",
+    "src/retrieval.py": "3d8f6135a252ad6ae2a3792278e3c2e395e1d1f9ad635c393f4ce9d9c5f3ee6d",
+    "src/safety.py": "aed4b9ab0ca5d5736333db8c025c21ed55e24f64020445d76fc090e6bc76fa4f"
+  },
+  "model": {
+    "name": "qwen3.5:4b-q4_K_M",
+    "digest": "91fa08b9fedfbbda924cd71febc5f6adbf31503cf7811df817dcf93bd56b08ff"
+  },
+  "embedding_model": {
+    "name": "nomic-embed-text:v1.5",
+    "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+  },
+  "generation_options": {
+    "temperature": 0,
+    "seed": 7,
+    "num_ctx": 8192,
+    "num_predict": 600
+  },
+  "think": false,
+  "timeout_seconds": 180,
+  "retries": 0,
+  "system_prompt_sha256": "665ae9567084bfafc9c66b249077cb4d2250bf8fb6ec4eaa4fc5390d2a865313",
+  "schema_sha256": "9616db88c77ebba46f8c3f8cd173ed3c431184cced4e3dc4c9e606cc55a3c738",
+  "corpus_fingerprint": "64a54a90137d4c1fbe9e130dc1aa8a249166a6bb2f5e4acd0508d4855fdc8606",
+  "chunks": 23,
+  "questions": 18,
+  "k": 3,
+  "context_max_words": 650,
+  "context_rule": "Excerpt text budget650; full scope/limitations/date metadata retained; full serialized user input bounded18000characters; model context8192tokens.",
+  "baseline": {
+    "name": "BM25",
+    "k1": 1.5,
+    "b": 0.75,
+    "idf": "log(1+(N-df+0.5)/(df+0.5))",
+    "tokens": "Unicode alphanumeric lowercase; no stemming or stopword removal; unique query terms",
+    "ties": "chunk ID ascending",
+    "zero_scores": "excluded"
+  },
+  "vector": {
+    "similarity": "Normalized cosine via numpy dot product",
+    "prefixes": {
+      "document": "search_document: ",
+      "query": "search_query: "
+    },
+    "truncate": false
+  },
+  "order": "alternate keyword/vector first across questions; one attempt per pair",
+  "latency": "Total request only, mixed warm model loading; no cold/warm or stage causal comparison",
+  "injection": "Fixed notes-field attacks, identical for both methods; excluded from primary retrieval/completeness aggregates",
+  "review": "Blinded AI-assisted semantic units and atomic claims against supplied evidence; root adjudication, not human or clinical validation.",
+  "python": "3.12.14",
+  "ollama": "0.40.0"
+}
